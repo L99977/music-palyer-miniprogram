@@ -1,0 +1,36 @@
+<view class="songDetailContainer">
+  <view class="author">{{songDetail.ar[0].name}}</view>
+  <view class="circle"></view>
+  <image class="needle {{isPlay&&'needleRotate'}}" src="/static/images/song/needle.png"></image>
+  <view class="discContainer  {{isPlay&&'discRotate'}}">
+    <image class="disc" src="/static/images/song/disc.png"></image>
+    <image class="musicImg" src="{{songDetail.al.picUrl}}"></image>
+  </view>
+  <!-- 歌词 -->
+  <view class="lyric">
+    <text>
+      {{currentLyric}}
+    </text>
+  </view>
+  <!-- 进度条 -->
+  <view class="progressControl">
+    <text>{{currentTime}}</text>
+    <!-- 总进度条 -->
+    <view class="barControl">
+      <!-- 实时进度条 -->
+      <view class="audio-currentTime-bar" style="width:{{currentWidth + 'rpx'}}">
+        <!-- 进度条前的小圆球 -->
+        <view class="audio-circle"></view>
+      </view>
+    </view>
+    <text>{{durationTime}}</text>
+  </view>
+  <!-- 底部歌曲控制区域 -->
+  <view class="musicControl">
+    <text class="iconfont    icon-xunhuan-wangyiicon"></text>
+    <text class="iconfont  icon-shangyiqu1" id="pre" bindtap="handleSwitch"></text>
+    <text class="iconfont  {{isPlay?'icon-bofang-wangyiicon':'icon-zanting-wangyiicon'}} big" bindtap="handleMusicPlay"></text>
+    <text class="iconfont  icon-xiayiqu" id="next" bindtap="handleSwitch"></text>
+    <text class="iconfont  icon-caidan"></text>
+  </view>
+</view>

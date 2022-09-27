@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/playList/playList",
+    "pages/search/search",
+    "pages/recommendSong/recommendSong",
+    "pages/songDetail/songDetail",
+    "pages/video/video",
+    "pages/personal/personal",
+    "pages/login/login"
+
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#E14B33",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "王柳的emo神器"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#d43c33",
+    "backgroundColor": "#fff",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/static/images/tab_icon/主页.png",
+        "selectedIconPath": "/static/images/tab_icon/主页1.png"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "text": "视频",
+        "iconPath": "/static/images/tab_icon/select00.png",
+        "selectedIconPath": "/static/images/tab_icon/select2.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/static/images/tab_icon/个人中心 (3).png",
+        "selectedIconPath": "/static/images/tab_icon/个人中心 (1).png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

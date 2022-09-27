@@ -1,0 +1,58 @@
+/* pages/login/login.wxss */
+.top_sign {
+  font-size: 120rpx;
+  color: #f8f8f8;
+  position: relative;
+  left: -16rpx;
+}
+
+.welcome {
+  font-size: 46rpx;
+  color: #555;
+  position: relative;
+  left: 50rpx;
+  top: -90rpx;
+}
+
+.input_Item {
+  background-color: #f8f6fc;
+  padding: 20rpx 30rpx;
+  width: 600rpx;
+  margin: 40rpx auto;
+  border-radius: 10rpx;
+}
+
+.input_Item .tip {
+  font-size: 30rpx;
+  color: #606266;
+  margin-bottom: 10rpx;
+}
+
+.input_Item .text {
+  font-size: 30rpx;
+  color: #303133;
+}
+
+.btn {
+  width: 640rpx;
+  margin: 80rpx auto 40rpx;
+  border-radius: 50rpx;
+  background-color: #d43c33;
+  color: #fff;
+  font-size: 32rpx;
+}
+.forget{
+  font-size: 28rpx;
+  color: #4399fc;
+  text-align: center;
+}
+.bottom{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 50rpx;
+  text-align: center;
+}
+.regiester {
+      color: #4399fc;
+}

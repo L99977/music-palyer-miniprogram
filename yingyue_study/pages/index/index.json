@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "NavHeader": "/components/NavHeader/NavHeader"
+  },
+  "navigationBarTitleText": "王柳的emo神器"
+}

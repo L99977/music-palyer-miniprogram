@@ -1,0 +1,79 @@
+/* pages/recommendSong/recommendSong.wxss */
+
+/* 头部区域 */
+.recommendSongContainer .header {
+  width: 100%;
+  height: 300rpx;
+  position: relative;
+}
+
+.header image {
+  width: 100%;
+  height: 100%;
+}
+
+.header .date {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.date .day {
+  font-size: 36rpx;
+}
+
+/* 列表区域 */
+.ListContainer {
+  padding: 0 20rpx;
+  border-radius: 30rpx;
+  background-color: #fff;
+  position: relative;
+  top: -20rpx;
+
+}
+.ListHeader {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.ListHeader .right {
+  float: right;
+}
+
+/* 音乐列表 */
+.musicScroll {
+  /* 设置对应高度，防止 scroll-view 以上的元素产生滚动*/
+  height: calc(100vh - 380rpx);
+}
+.musicItem{
+  position: relative;
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.musicItem image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 8rpx;
+}
+ .musicItem .musicInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+}
+.musicInfo text{
+  max-width: 400rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.musicItem .iconfont{
+  position: absolute;
+  right: 0;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align:right;
+}
